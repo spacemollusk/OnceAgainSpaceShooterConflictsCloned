@@ -163,6 +163,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114960433178452790, guid: 8e33fda0c220936498f5288af83d7450, type: 3}
+      propertyPath: health
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114960433178452790, guid: 8e33fda0c220936498f5288af83d7450, type: 3}
       propertyPath: mainDestructionFX
       value: 
       objectReference: {fileID: 1587261729604890, guid: 600ec83cba1cec448bf41a6607229741, type: 3}

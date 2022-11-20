@@ -7,6 +7,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private GameObject destructionFX;
+    [SerializeField] private int health = 3;
+
+    public static Player instance;
     public GameObject mainDestructionFX;
     public GameObject secondaryDestructionFX;
     public GameObject tertiaryDestructionFX;
@@ -23,7 +27,11 @@ public class Player : MonoBehaviour
     //method for damage proceccing by 'Player'
     public void GetDamage(int damage)
     {
-        StartCoroutine(Destruction());
+        health -= damage;
+
+        if (health <= 0){
+        
+            StartCoroutine(Destruction());
     }
 
     //'Player's' destruction procedure

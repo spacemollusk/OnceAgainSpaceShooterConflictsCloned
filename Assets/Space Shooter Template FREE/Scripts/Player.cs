@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     public GameObject secondaryDestructionFX;
     public GameObject tertiaryDestructionFX;
 
-    public static Player instance;
+  
     public float destructionFXRange = .4f;
 
     private void Awake()
@@ -29,9 +29,11 @@ public class Player : MonoBehaviour
     {
         health -= damage;
 
-        if (health <= 0){
-        
+        if (health <= 0)
+        {
+
             StartCoroutine(Destruction());
+        }
     }
 
     //'Player's' destruction procedure
